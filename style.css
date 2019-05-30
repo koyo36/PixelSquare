@@ -1,0 +1,257 @@
+/*
+Theme Name: PixelSquare
+Theme URI: koyocreative.com
+Author: the WordPress team
+Author URI: koyocreative.com
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pixelsquare
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  font-family: Roboto, Lato, sans-serif;
+  font-size: 16px; }
+
+.main-search {
+  height: 60px; }
+  .main-search .search-form {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-items: flex-end;
+    align-items: flex-end; }
+  .main-search input.search-field {
+    margin-left: auto;
+    width: 70%;
+    border: 1px solid #b4b4b4;
+    padding: 10px 50px 10px 10px;
+    border-radius: 4px;
+    outline: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #fff;
+    z-index: 10;
+    transition: all ease-in-out .25s; }
+    .main-search input.search-field:focus {
+      width: 100%;
+      transition: all ease-in-out .25s; }
+  .main-search .search-submit {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    right: 0;
+    top: 0;
+    font-size: 28px;
+    color: #459ad4;
+    z-index: 50; }
+
+.main-logo > a > img {
+  max-height: 250px !important;
+  max-width: 250px !important; }
+
+.main-header {
+  margin-top: 70px;
+  margin-bottom: 100px; }
+
+.nav-container {
+  width: 100%;
+  margin-bottom: 70px; }
+  .nav-container .nav {
+    border-bottom: 1px solid #b4b4b4; }
+  .nav-container .nav-item {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    min-width: 50px;
+    height: 50px; }
+    .nav-container .nav-item:hover, .nav-container .nav-item.active {
+      border-bottom: 1px solid #459ad4; }
+
+.ps-btn {
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 200px;
+  color: #fff;
+  padding: 15px;
+  background: #459ad4;
+  line-height: 40px;
+  height: 70px;
+  border-radius: 6px;
+  font-size: 18px;
+  border: 2px solid #459ad4;
+  transition: all ease-in-out .25s; }
+  .ps-btn:hover {
+    color: #459ad4;
+    background: transparent;
+    transition: all ease-in-out .25s; }
+
+.ps-pink {
+  background: #ff80ab;
+  color: #fff;
+  border-color: #ff80ab; }
+  .ps-pink:hover {
+    color: #ff80ab; }
+
+.btn-disabled {
+  background-color: #e5e5e5 !important;
+  border-color: #e5e5e5 !important;
+  color: #ff80ab; }
+
+.frebie-item {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in .2s; }
+  .frebie-item:hover > .frebie-overlay {
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all ease-in .2s; }
+
+.frebie-img {
+  min-width: 100%;
+  height: 400px; }
+
+.frebie-img img {
+  width: 100%;
+  height: 400px; }
+
+.frebie-overlay {
+  text-align: center;
+  padding: 20px;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); }
+  .frebie-overlay .frebie-title a {
+    color: #459ad4;
+    font-size: 2em;
+    text-decoration: none; }
+    .frebie-overlay .frebie-title a:hover {
+      text-decoration: none; }
+  .frebie-overlay .frebie-ctrl {
+    margin-top: 20px; }
+    .frebie-overlay .frebie-ctrl a {
+      text-decoration: none !important; }
+      .frebie-overlay .frebie-ctrl a:hover {
+        text-decoration: none !important; }
+    .frebie-overlay .frebie-ctrl .btn {
+      border: 2px solid #459ad4;
+      width: 120px; }
+      .frebie-overlay .frebie-ctrl .btn.btn-link {
+        color: #fff;
+        background: #459ad4;
+        border: 2px solid #459ad4; }
+        .frebie-overlay .frebie-ctrl .btn.btn-link:hover {
+          background: transparent;
+          color: #459ad4;
+          border: 2px solid #459ad4; }
+      .frebie-overlay .frebie-ctrl .btn.btn-love {
+        color: #fff;
+        background: #ff80ab;
+        border: 2px solid #ff80ab; }
+        .frebie-overlay .frebie-ctrl .btn.btn-love:hover {
+          background: transparent;
+          color: #ff80ab;
+          border: 2px solid #ff80ab; }
+
+.frebie-wrap {
+  margin-bottom: 70px; }
+
+.frebie-wrap,
+.frebie-ctrl {
+  margin-bottom: 70px; }
+
+.frebie-right,
+.frebie-left {
+  color: #459ad4;
+  font-size: 30px; }
+
+.frebie-right {
+  text-align: right; }
+
+.frebie-left {
+  text-align: left; }
+
+.frebie-nav .nav-link {
+  font-size: 18px;
+  color: #b4b4b4;
+  padding: 12px; }
+  .frebie-nav .nav-link:hover {
+    color: #459ad4; }
+
+li.nav-item.active > .nav-link {
+  color: #459ad4 !important;
+  font-weight: bold !important; }
+
+.article-wrap {
+  width: 100%;
+  overflow: hidden; }
+
+img.size-frebie {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px; }
+
+.article-wrap h1, .article-wrap h2, .article-wrap h3, .article-wrap h4, .article-wrap h5, .article-wrap h6 {
+  color: #459ad4; }
+
+.article-wrap .post-meta {
+  color: #b4b4b4;
+  padding-bottom: 35px; }
+
+.article-wrap .post-meta span {
+  color: #459ad4;
+  margin-right: 200px; }
+
+.article-wrap .post-meta a {
+  color: #459ad4; }
+
+.article-wrap .featured-image {
+  margin-bottom: 70px; }
+
+.main-footer {
+  color: #b4b4b4;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 55px; }
+
+hr {
+  border-color: #b4b4b4; }
+
+a.footer-link {
+  color: #b4b4b4; }
+  a.footer-link b {
+    color: #459ad4; }
+
+.no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.lead-text {
+  padding-bottom: 30px;
+  font-size: 2em;
+  color: #459ad4; }
